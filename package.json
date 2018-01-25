@@ -1,0 +1,21 @@
+{
+  "name": "typescript-presentation-2018",
+  "version": "1.0.0",
+  "description": "Typescript overview to the IP team at clearwter analytics ",
+  "scripts": {
+    "present": "reveal-md slides.md" ,
+    "demo": "reveal-md demo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelSila/Typescript-Presentation-2018.git"
+  },
+  "keywords": [
+    "presentation",
+    "typscript"
+  ],
+  "author": "michael aras sila",
+  "dependencies": {
+    "reveal-md": "1.1.0"
+  }
+}
