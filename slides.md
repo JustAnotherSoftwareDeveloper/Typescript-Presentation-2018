@@ -80,12 +80,7 @@ class Employee
     }
 
     set fullName(newName: string) {
-        if (passcode && passcode == "secret passcode") {
-            this._fullName = newName;
-        }
-        else {
-            console.log("Error: Unauthorized update of employee!");
-        }
+         this._fullName = newName;
     }
 
     public greet() : string {
@@ -108,7 +103,7 @@ interface Version
     name: string;
     svnLocation? : scmLocation;
     release: boolean;
-    release() : void;
+    releaseBranch() : void;
 } 
 </code>
 </pre>
@@ -119,7 +114,7 @@ interface Version
 
 <pre>
 <code>
-function buildTitle(minor: string, major = "Presentation") {
+function buildTitle(minor: string, major = "Presentation") : string {
     return minor + " - "+major;
 }
 </code>
@@ -136,7 +131,7 @@ function buildTitle(minor: string, major = "Presentation") {
 
 ### ...And That's just the begginning 
 
-Enums, Generics, Type  Inference, and Much More Supported
+Enums, Generics, Type  Inference, IDE Autocomplete, and Much More Supported
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
